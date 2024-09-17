@@ -36,10 +36,10 @@ function generar() {
 
             if (contieneEspecial) {
                 estado.textContent = "La contraseña es fuerte y segura";
-                estado.style.color = 'green';
+                estado.style.backgroundColor = 'green';
             } else {
                 estado.textContent = "La contraseña es débil";
-                estado.style.color = 'red';
+                estado.style.backgroundColor = 'red';
             }
 
             clave.value = paswoord;
@@ -51,4 +51,11 @@ function nuevo() {
     clave.value = "";
     cantidad.value = "";
     estado.textContent = "";
+    estado.style.backgroundColor = 'transparent';
+   
+    estado.style.border = 'none';
+    estado.style.outline = 'none';
+    estado.style.boxShadow = 'none';
+    estado.style.width = '0px';
+  
 }
